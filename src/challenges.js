@@ -1,10 +1,10 @@
 // Desafio 1
 function compareTrue(value1, value2) {
   // seu código aqui
-  if(value1 && value2 === true){
+  if (value1 && value2 === true) {
     return true;
   }
-    return false;
+  return false;
 }
 
 // Desafio 2
@@ -20,8 +20,9 @@ function splitSentence(word) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(meuArray) {
   // seu código aqui
+  return meuArray.[meuArray.length-1] + ', ' + meuArray[0];
 }
 
 // Desafio 5
