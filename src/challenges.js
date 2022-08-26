@@ -85,16 +85,28 @@ function fizzBuzz(numeros) {
 }
 
 // Desafio 9
-function encode() {
+function encode(phrase) {
   // seu código aqui
+  
+  return result;
 }
+
 function decode() {
   // seu código aqui
 }
 
 // Desafio 10
-function techList() {
+function techList(nomeTech, nomePessoa) {
   // seu código aqui
+  let listaTech = nomeTech.sort();
+  let objetoTech = [];
+    for (let i=0;i<listaTech.length;i+=1){
+      objetoTech.push({tech: listaTech[i], name: nomePessoa});
+    }
+    if (listaTech.length === 0){
+      return 'Vazio!';
+    }
+  return objetoTech;
 }
 
 module.exports = {
