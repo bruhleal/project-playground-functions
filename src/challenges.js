@@ -88,7 +88,6 @@ function fizzBuzz(numeros) {
 function encode(phrase) {
   // seu código aqui
   
-  return result;
 }
 
 function decode() {
