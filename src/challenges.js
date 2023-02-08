@@ -87,11 +87,48 @@ function fizzBuzz(numeros) {
 // Desafio 9
 function encode(phrase) {
   // seu código aqui
-  
+  let auxiliar = phrase.split('');
+  for (let index=0;index<auxiliar.length;index+=1){
+    if (auxiliar[index] === 'a'){
+      auxiliar[index] = '1';
+    }
+    else if (auxiliar[index] === 'e'){
+      auxiliar[index] = '2';
+    }
+    else if (auxiliar[index] === 'i'){
+      auxiliar[index] = '3';
+    }
+    else if (auxiliar[index] === 'o'){
+      auxiliar[index] = '4';
+    }
+    else if (auxiliar[index] === 'u'){
+      auxiliar[index] = '5';
+    }
+  }
+  return auxiliar.join('');
 }
 
-function decode() {
+function decode(number) {
   // seu código aqui
+  let auxiliar = number.split('');
+  for (let index=0;index<auxiliar.length;index+=1){
+    if (auxiliar[index] === '1'){
+      auxiliar[index] = 'a';
+    }
+    else if (auxiliar[index] === '2'){
+      auxiliar[index] = 'e';
+    }
+    else if (auxiliar[index] === '3'){
+      auxiliar[index] = 'i';
+    }
+    else if (auxiliar[index] === '4'){
+      auxiliar[index] = 'o';
+    }
+    else if (auxiliar[index] === '5'){
+      auxiliar[index] = 'u';
+    }
+  }
+  return auxiliar.join('');
 }
 
 // Desafio 10

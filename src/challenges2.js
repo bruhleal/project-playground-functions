@@ -1,6 +1,14 @@
+/* eslint-disable complexity */
 // Desafio 11
-function generatePhoneNumber() {
+function generatePhoneNumber(arrayNumber) {
   // seu código aqui
+  if (arrayNumber.length !== 11){
+    return 'Array com tamanho incorreto.';
+  }
+  else if (arrayNumber.length < 0 || arrayNumber.length > 9) {
+    return 'não é possível gerar um número de telefone com esses valores';
+  }
+  
 }
 
 // Desafio 12
@@ -26,7 +34,17 @@ function triangleCheck (lineA, lineB, lineC) {
 // Desafio 13
 function hydrate(quantidade) {
   // seu código aqui
- 
+  let quantidadeRecebida = quantidade.match(/\d+/g);
+  let auxiliar = 0;
+
+  for (let index of quantidadeRecebida) {
+    auxiliar += Number(index);
+  }
+  if (auxiliar === 1) {
+    result = `${Number(auxiliar)} copo de água`;
+    return result;
+  }
+  return result = `${Number(auxiliar)} copos de água`;
 }
 
 module.exports = {
